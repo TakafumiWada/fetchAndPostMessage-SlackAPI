@@ -15,6 +15,7 @@ const fetchMessage = () => {
   };
   return UrlFetchApp.fetch(url, options);
 };
+
 const sendMessage = (text) => {
   const url = "https://slack.com/api/chat.postMessage";
   const options = {
@@ -29,6 +30,7 @@ const sendMessage = (text) => {
   };
   return UrlFetchApp.fetch(url, options);
 };
+
 const sendMessageThread = (text, ts) => {
   const url = "https://slack.com/api/chat.postMessage";
   const options = {
